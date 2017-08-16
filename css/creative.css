@@ -486,24 +486,27 @@ svg {
 .svg-title-text {
     text-anchor: middle;
     font-size: 50px;
-    fill: white;
-    stroke: white;
+    fill: none;
+    stroke: none;
     stroke-dasharray: 150% 150%;
     stroke-width: 1px;
-    -webkit-animation: stroke-offset 5s linear;
-          animation: stroke-offset 5s linear;
+    -webkit-animation: stroke-offset 5s linear 2s forwards;
+          animation: stroke-offset 5s linear 2s forwards;
 }
 
 @-webkit-keyframes stroke-offset {
   0% {
     stroke-dashoffset: 150%;
+    stroke: white;
     fill:transparent;
   }
   50% {
     fill:transparent;
+    stroke: white;
   }
   100% {
     stroke-dashoffset: 0%;
+    stroke: white;
     fill: white;
   }
 }
@@ -511,13 +514,16 @@ svg {
 @keyframes stroke-offset {
   0% {
     stroke-dashoffset: 150%;
+    stroke: white;
     fill:transparent;
   }
   50% {
     fill:transparent;
+    stroke: white;
   }
   100% {
     stroke-dashoffset: 0%;
+    stroke: white;
     fill: white;
   }
 }
