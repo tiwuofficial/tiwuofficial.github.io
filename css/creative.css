@@ -86,6 +86,7 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
+    font-size: 14px;
     text-transform: none;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
@@ -493,6 +494,16 @@ svg {
     -webkit-animation: stroke-offset 5s linear 2s forwards;
           animation: stroke-offset 5s linear 2s forwards;
 }
+
+@media(max-width:768px) {
+    svg {
+      width: 290px;
+    }
+    .svg-title-text {
+        font-size: 33px;
+    }
+}
+
 
 @-webkit-keyframes stroke-offset {
   0% {
