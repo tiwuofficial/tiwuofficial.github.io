@@ -474,3 +474,50 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+
+/* svg */
+
+svg {
+  width: 500px;
+  height: 200px;
+}
+
+.svg-title-text {
+    text-anchor: middle;
+    font-size: 50px;
+    fill: white;
+    stroke: white;
+    stroke-dasharray: 150% 150%;
+    stroke-width: 1px;
+    -webkit-animation: stroke-offset 5s linear;
+          animation: stroke-offset 5s linear;
+}
+
+@-webkit-keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 150%;
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+  }
+  100% {
+    stroke-dashoffset: 0%;
+    fill: white;
+  }
+}
+
+@keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 150%;
+    fill:transparent;
+  }
+  50% {
+    fill:transparent;
+  }
+  100% {
+    stroke-dashoffset: 0%;
+    fill: white;
+  }
+}
